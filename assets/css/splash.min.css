@@ -1,0 +1,26 @@
+.splash-portfolio .portfolio-box img {
+	-webkit-box-shadow: 0 10px 36px 0 rgba(22,24,26,0.1);
+	box-shadow: 0 10px 36px 0 rgba(22,24,26,0.1);
+	border-radius: 0.4em;
+	-webkit-transition: ease-out .16s;
+	transition: ease-out .16s;
+}
+.splash-portfolio .portfolio-box div {
+	opacity: 0.6;
+	-webkit-transition: ease-out .12s;
+	transition: ease-out .12s;
+}
+.splash-portfolio .portfolio-box:hover img {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+	-webkit-box-shadow: 0 10px 40px 0 rgba(22,24,26,0.15);
+	box-shadow: 0 10px 40px 0 rgba(22,24,26,0.15);
+}
+.splash-portfolio .portfolio-box:hover div {
+	opacity: 1;
+}
+
+.filter.splash-filter ul li{
+	margin-right: 8px;
+	margin-left: 8px;
+}
