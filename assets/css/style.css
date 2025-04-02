@@ -1,0 +1,417 @@
+/* Css for the invoice */
+.invoice-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.invoice-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.invoice-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.invoice-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.invoice-date {
+    font-size: 1rem;
+    color: #666;
+}
+
+.inovice-container.section-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.payment-details {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+.table th {
+    font-weight: 600;
+    color: #555;
+}
+
+.total-row {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+#footer-logo .logo {
+    width: 100px;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Styling the list on the read page */
+#read-nav ul.list-horizontal-dash {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#read-nav ul.list-horizontal-dash li {
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+    padding-right: 12px;
+}
+
+#read-nav ul.list-horizontal-dash li:not(:last-child)::after {
+    content: "-";
+    position: absolute;
+    right: -8px;
+    color: #666;
+}
+
+#read-nav ul.list-horizontal-dash a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#read-nav ul.list-horizontal-dash a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+#read-nav .list-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#read-nav .list-horizontal li {
+    display: inline;
+}
+
+#read-nav .list-horizontal a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+/* Share Button Styling */
+.share-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.share-button:hover {
+    background-color: #0056b3;
+}
+
+/* Copy Message Styling */
+.copy-message {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/*style for the icon*/
+.icon-3xl i {
+    font-size: 3rem;
+    color: #141414;
+    margin-bottom: 10px;
+}
+
+/*style for the customer logo's*/
+.client-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Reduce spacing between list items */
+.list-inline-sm {
+    margin-bottom: 0;
+    display: inline-block;
+    margin: 0 3px; /* Reduce margin to bring circles closer */
+}
+
+
+.section-xl {
+    /* background-image: url('fallback-image.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Styling for the research page  */
+
+.research-hover {
+    position: relative;
+    height: 500px; /* Default height */
+}
+
+@media (max-width: 992px) {
+    .research-hover {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .research-hover {
+        height: 300px;
+    }
+}
+
+/* Styling the hero section on the store page  */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://cdn.jsdelivr.net/gh/stemaide/reformare-cdn@main/assets/images/heroes/new_web_transparent.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* fixing image alignment for store page  */
+.fixed-height {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image within the container */
+}
+
+
+#store-hero .hero-section::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust darkness */
+    z-index: 1;
+}
+
+#store-hero .hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling the featured product section on the store page  */
+
+#store .product-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#store .product-main-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#store .product-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#store .product-rating {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+#store .product-desc {
+    margin-bottom: 1.5rem;
+}
+
+
+#store .product-details {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#store .quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#store .thumbnail-img {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 5px;
+    transition: border-color 0.3s;
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+#store .thumbnail-img:hover {
+    border-color: #007bff;
+}
+
+.related-product-card {
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.related-product-card:hover {
+    transform: translateY(-5px);
+}
+
+.related-product-img {
+    height: 150px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+#store .cart-notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1050;
+    display: none;
+}
+
+#store .add-to-cart-btn {
+    background-color: #4e9af8;
+    border-color: #4e9af8;
+}
+
+#store .add-to-cart-btn:hover {
+    background-color: #3a89e9;
+    border-color: #3a89e9;
+}
+
+#store .checkout-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#store .checkout-btn:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Styling the team carousel  */
+#teamCarousel .team-img {
+    position: relative;
+    overflow: hidden;
+}
+
+#teamCarousel .team-img img {
+    transition: transform 0.3s ease;
+}
+
+#teamCarousel .team-img:hover img {
+    transform: scale(1.1);
+}
+
+#teamCarousel .team-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#teamCarousel .team-img:hover .team-overlay {
+    opacity: 1;
+}
+
+#teamCarousel .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#teamCarousel .social-links li {
+    margin: 0 5px;
+}
+
+#teamCarousel .social-links li a {
+    color: white;
+    font-size: 18px;
+}
+
+.section-lg.bg-image.parallax{
+    /* filter: brightness(50%); */
+    position: relative;
+}
+.section-lg.bg-image.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay; */
+    z-index: 1;
+}
+
+.section-lg.bg-image.parallax h1, .breadcrumb{
+    position: relative;
+    z-index: 2;
+}
