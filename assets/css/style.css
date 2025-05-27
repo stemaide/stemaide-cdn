@@ -464,53 +464,68 @@
     position: relative;
     z-index: 2;
 }
-
 /* Language Switcher Styling */
-        .language-switcher {
-            position: absolute; /* Or relative, depending on parent. Absolute for top-right corner */
-            top: 15px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            font-family: Arial, sans-serif;
-            font-size: 0.9rem;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
-            padding: 8px 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex; /* Use flexbox for alignment */
-            gap: 10px; /* Space between links */
-        }
+.language-switcher {
+    position: absolute;
+    /* Or relative, depending on parent. Absolute for top-right corner */
+    top: 15px;
+    /* Adjust as needed */
+    right: 20px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure it's above other content */
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent background */
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* Use flexbox for alignment */
+    gap: 10px;
+    /* Space between links */
+}
 
-        .language-switcher a {
-            text-decoration: none;
-            color: #333; /* Darker text for readability */
-            font-weight: 500;
-            padding: 3px 5px; /* Small padding around text */
-            transition: all 0.2s ease-in-out;
-        }
+.language-switcher a {
+    text-decoration: none;
+    color: #333;
+    /* Darker text for readability */
+    font-weight: 500;
+    padding: 3px 5px;
+    /* Small padding around text */
+    transition: all 0.2s ease-in-out;
+}
 
-        .language-switcher a:hover {
-            color: #007bff; /* Highlight on hover */
-            text-decoration: underline;
-        }
+.language-switcher a:hover {
+    color: #007bff;
+    /* Highlight on hover */
+    text-decoration: underline;
+}
 
-        .language-switcher a.active {
-            color: #007bff; /* Active language color */
-            font-weight: bold;
-            pointer-events: none; /* Make active language non-clickable */
-        }
+.language-switcher a.active {
+    color: #007bff;
+    /* Active language color */
+    font-weight: bold;
+    pointer-events: none;
+    /* Make active language non-clickable */
+}
 
-        /* Consider responsive adjustments if needed */
-        @media (max-width: 768px) {
-            .language-switcher {
-                position: static; /* Stack naturally in smaller screens */
-                width: 100%;
-                text-align: center;
-                padding: 10px;
-                box-shadow: none;
-                border-radius: 0;
-                background-color: #f8f8f8; /* Less transparency on small screens */
-                justify-content: center; /* Center items for flexbox */
-                margin-top: 10px; /* Add some space if it's below navigation */
-            }
-        }
+/* Consider responsive adjustments if needed */
+@media (max-width: 768px) {
+    .language-switcher {
+        position: static;
+        /* Stack naturally in smaller screens */
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #f8f8f8;
+        /* Less transparency on small screens */
+        justify-content: center;
+        /* Center items for flexbox */
+        margin-top: 10px;
+        /* Add some space if it's below navigation */
+    }
+}
