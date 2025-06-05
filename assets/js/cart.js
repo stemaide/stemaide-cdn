@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: '<?= $base_path ?>includes/cart.inc.php',
+            url: basePath + 'includes/cart.inc.php',
             method: 'POST',
             data: {
                 'add_item': true,
